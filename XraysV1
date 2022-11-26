@@ -1,0 +1,112 @@
+local Library = loadstring(game:HttpGet("https://raw.githubusercontent.com/Maikderninja/Maikderninja/main/Test.lua"))();
+local Window = Library.CreateLib("Xryas", "BloodTheme")
+ 
+--Tab
+local Tab1 = Window:NewTab("Main")
+local Section1 = Tab1:NewSection("Scritps")
+ 
+--Button
+ 
+Section1:NewButton("Infinity Jump", "Better", function()
+    local InfiniteJumpEnabled = true
+game:GetService("UserInputService").JumpRequest:connect(function()
+	if InfiniteJumpEnabled then
+		game:GetService"Players".LocalPlayer.Character:FindFirstChildOfClass'Humanoid':ChangeState("Jumping")
+	end
+end)
+end)
+ 
+Section1:NewButton("fly scritp", "Hahaha", function()
+    loadstring("\108\111\97\100\115\116\114\105\110\103\40\103\97\109\101\58\72\116\116\112\71\101\116\40\40\39\104\116\116\112\115\58\47\47\103\105\115\116\46\103\105\116\104\117\98\117\115\101\114\99\111\110\116\101\110\116\46\99\111\109\47\109\101\111\122\111\110\101\89\84\47\98\102\48\51\55\100\102\102\57\102\48\97\55\48\48\49\55\51\48\52\100\100\100\54\55\102\100\99\100\51\55\48\47\114\97\119\47\101\49\52\101\55\52\102\52\50\53\98\48\54\48\100\102\53\50\51\51\52\51\99\102\51\48\98\55\56\55\48\55\52\101\98\51\99\53\100\50\47\97\114\99\101\117\115\37\50\53\50\48\120\37\50\53\50\48\102\108\121\37\50\53\50\48\50\37\50\53\50\48\111\98\102\108\117\99\97\116\111\114\39\41\44\116\114\117\101\41\41\40\41\10\10")()
+end)
+
+Section1:NewButton("Doors scritp(Darkrai X)", "Hahaha", function()
+  loadstring(game:HttpGet("https://raw.githubusercontent.com/GamingScripter/Darkrai-X/main/Games/Doors"))()  
+end)
+
+Section1:NewButton("Doors scritp", "Hahaha", function()
+  loadstring(game:HttpGet('https://raw.githubusercontent.com/StupidProAArsenal/main/main/deer%20customs',true))() 
+end)
+
+Section1:NewButton("Prison life scritp(MoonUi)", "Mwahaha", function()
+  loadstring(game:HttpGet('https://raw.githubusercontent.com/IlikeyocutgHAH12/MoonUI-v10-/main/MoonUI%20v10'))() 
+  end)
+  
+Section1:NewButton("Break story", "Hahaha", function()
+ loadstring(game:HttpGet("https://raw.githubusercontent.com/TrixAde/Proxima-Hub/main/Main.lua"))()
+end)
+
+Section1:NewButton("Finger(Fe)", "Hahaha", function()
+  loadstring(game:HttpGet("https://raw.githubusercontent.com/Traphood86/Finger-script-v2-/main/finger.txt"))();
+end)
+
+Section1:NewButton("Brookhaven(Ice hub)", "Hahaha", function()
+  loadstring(game:HttpGet("https://raw.githubusercontent.com/IceMael7/NewIceHub/main/Brookhaven"))()
+end)
+
+Section1:NewButton("Push  Part scritp(Fe)", "PUSH", function()
+  loadstring(game:HttpGet(('https://pastefy.ga/66nSxeV5/raw'),true))()
+end)
+
+Section1:NewButton("invisible(Fe)", "your are GIGA CHAD", function()
+  loadstring(game:HttpGet('https://raw.githubusercontent.com/FDHKZY/Invisible/main/Gui%20V2 '))() 
+end)
+Section1:NewButton("Free Emotes(Fe)", "use for FUN", function()
+   loadstring(game:HttpGet("https://cdn.discordapp.com/attachments/1016359889246879802/1039819753402941460/Protected.lua",true))()
+end)
+
+Section1:NewButton("Snake scritp(Fe)", "Hahaha", function()
+   loadstring(game:HttpGet(('https://pastefy.ga/tWBTcE4R/raw'),true))()  
+end)
+
+--button put on first coding
+ 
+local ScreenGui = Instance.new("ScreenGui")
+local F6 = Instance.new("TextButton")
+local UITextSizeConstraint = Instance.new("UITextSizeConstraint")
+ 
+--Properties:
+ 
+ScreenGui.Parent = game.Players.LocalPlayer:WaitForChild("PlayerGui")
+ScreenGui.ZIndexBehavior = Enum.ZIndexBehavior.Sibling
+ 
+F6.Name = "F6"
+F6.Parent = ScreenGui
+F6.BackgroundColor3 = Color3.fromRGB(40, 40, 40)
+F6.BackgroundTransparency = 0.500
+F6.Position = UDim2.new(0.806384563, 0, 0.0453872904, 0)
+F6.Size = UDim2.new(0.159186631, 0, 0.285657197, 0)
+F6.Font = Enum.Font.SourceSans
+F6.Text = "Xryas"
+F6.TextColor3 = Color3.fromRGB(0, 0, 0)
+F6.TextScaled = true
+F6.TextSize = 30.000
+F6.TextStrokeColor3 = Color3.fromRGB(255, 255, 255)
+F6.TextStrokeTransparency = 0.000
+F6.TextWrapped = true
+F6.MouseButton1Down:Connect(function()
+game:GetService("VirtualInputManager"):SendKeyEvent(true, "F6" ,false ,game)
+end)
+ 
+UITextSizeConstraint.Parent = F6
+UITextSizeConstraint.MaxTextSize = 30
+ 
+--Tab
+local Tab2 = Window:NewTab("Credits")
+local Section2 = Tab2:NewSection("CREDITS Tihax#6378")
+
+Section2:NewKeybind("Toggle ui", "Toogle the ui lol", Enum.KeyCode.F6, function()
+    Library:ToggleUI()
+end)
+ 
+game.StarterGui:SetCore("SendNotification", {
+    Title = "Charging";
+    Text = "Made by Tihax"; -- what the text says (ofc)
+    Duration = 5;
+})
+wait(1)
+game.StarterGui:SetCore("SendNotification", {
+    Title = "script ready ";
+    Text = "Thx for using Xryas"; -- what the text says (ofc)
+    Duration = 5;
+})
